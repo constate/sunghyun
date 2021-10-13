@@ -10,6 +10,17 @@ https://github.com/edu-ministori/addinedu_10
 
 https://codesandbox.io/s/html-css-hc9rd?file=/README.md
 
+## Mark Down 문서
+
+```
+- README.md(markdown)
+- 제목 표시 기호 : # ~ # \* 6
+- 목록 : -
+- 인용문, 중요 내용 표시 : >
+- tab 빼기는 shift tab키
+- 코드 블럭 : ` (backtick)
+```
+
 Electron => html, css, js로 소프트웨어 제작 가능
 
 client server system
@@ -33,12 +44,24 @@ Response <-
 
 - 웹 개발 : 클라이언트(브라우저) / 서버(Apache, IIS)
 
-* Front End Develop
+- Front End Develop
 
   - 사용자 기준으로 사용자가 확인 가능한 영역(Front)
   - UI/UX 디자인 / 개발 => Front End Develop
+  - 웹 개발
+    - 브라우저 통해서 화면 표시
+    - 프로그래밍 언어(HTML, CSS, JS) 해석(실행-컴파일/랜더링) 시점 : 브라우저에서 해석/실행
 
-* Back End Develop
+- Back End Develop
 
   - 사용자가 확인 불가능한 영역(Back)
   - 데이터 처리 개발
+  - 프로그래밍 언어(JS + node.js, JSP, PHP, Python) 해석(실행) 시점 : 서버에서 해석/실행
+
+- Request / Response 개념 + 실행 시점
+  - 클라이언트 Request
+  - 서버 Response
+    - Front End Develop Source
+      - Source 상태 전송 => 브라우저가 해석해서 실행 : Rendering
+    - back End Develop Source
+      - Source를 실행 : Compile / Interprete => 데이터 처리 => 처리된 결과 데이터 전송
