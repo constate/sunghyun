@@ -174,4 +174,63 @@ https://www.w3schools.com/html/html_images.asp
 (alt 자세한 설명이 필요 웹표준)
 ```
 
+### HTML File Paths
+
+https://www.w3schools.com/html/html_filepaths.asp
+
+- 파일 경로 =(비슷) URL(Uniform Resource Locator)
+
+```
+URL
+www.w3schools.com/html/html_filepaths.asp
+www.w3schools.com/html/
+
+File 경로
+www.w3schools.com/html/html_filepaths.asp
+```
+
+- 인터넷 주소
+
+  - IP : Internet Protocol / 인터넷에서 사용하는 실제 주소 ex)192.168.0.1
+  - Domain Name : IP 주소를 대체하는 영어로 된 주소체계(www.naver.com)
+
+- URL(Uniform Resource Locator)
+
+```
+URL
+https://codesandbox.io/s/html-css-x1mfl?file=/summary/html_css.md
+
+Domain Name
+https://codesandbox.io/
+```
+
+- 인터넷에서 사용하는 서버에 저장된 자원의 위치
+- 자세한 인터넷 주소
+
+- 절대주소(URL)
+  - File이나 Resource를 찾거나 이동하기 위한 기준 지점이 서버의 주소(IP, 도메인 주소)
+  - 항상 같은 위치를 찾거나 이동할 수 있음
+
+```
+<a href="https://github.com/constate/sunghyun/blob/main/README.md"></a>
+
+<img src="https://codesandbox.io/s/html-css-x1mfl?file=/summary/images/img.png" />
+```
+
+- 상대주소(URL)
+  - File이나 Resource를 찾거나 이동하기 위한 기준 지점이 이동하거나 찾으려고 하는 파일의 위치
+  - 상황에 따라 경로/주소 표시 형태가 변경될 수 있음
+
+```
+(현재문서 폴더 기준으로 이동)
+<a href="README.md"></a>
+
+<a href="../../README.md"></a>
+(../ : 상위폴더)
+
+<img src="summary/images/img.png" />
+
+<img src="images/img.png" />
+```
+
 # CSS
