@@ -145,7 +145,9 @@ https://www.w3schools.com/html/html_lists.asp
 ### HTML Table
 
 https://www.w3schools.com/html/html_tables.asp
+
 https://www.tablesgenerator.com/html_tables
+(테이블 제네레이터)
 
 표 구성 요소 : 열(세로줄), 행(가로줄), 셀(칸)
 
@@ -157,5 +159,19 @@ https://www.tablesgenerator.com/html_tables
 - td tag : table data / 데이터 셀
 
 ## HTML MULTIMEDIA Contents
+
+### HTML Images
+
+https://www.w3schools.com/html/html_images.asp
+
+- img tag : image / 이미지 파일을 HTML 페이지에 삽입 / 빈 요소
+- attribute
+  - src : 이미지 파일의 경로/이름 정보
+  - alt : alternative / 대체 텍스트
+
+```
+<img src="이미지 파일 경로/이름" alt="이미지 설명글">
+(alt 자세한 설명이 필요 웹표준)
+```
 
 # CSS
