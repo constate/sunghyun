@@ -131,6 +131,31 @@ https://www.w3schools.com/html/html_links.asp
 - 다른 페이지로 링크 연결
 - 같은 페이지에서 상하 이동 -> 북마크 기능
 
+### HTML Lists
+
+https://www.w3schools.com/html/html_lists.asp
+
+- ul tag : unordered list / 순서 없는 목록
+- ol tag : ordered list / 순서 있는 목록
+- li tag : list item / 각 아이템 항목
+- dl tag : description list / 설명 목록
+- dt tag : description title(theme) / 설명 목록 제목
+- dd tag : description data / 설명 내용
+
+### HTML Table
+
+https://www.w3schools.com/html/html_tables.asp
+https://www.tablesgenerator.com/html_tables
+
+표 구성 요소 : 열(세로줄), 행(가로줄), 셀(칸)
+
+- table tag
+- thead tag : 표 구성 영역 - 열제목 영역
+- tbody tag : 표 구성 영역 - 데이터 영역
+- tr tag : table row / 표의 행
+- th tag : table header / 열 제목 셀
+- td tag : table data / 데이터 셀
+
 ## HTML MULTIMEDIA Contents
 
 # CSS
