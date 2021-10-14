@@ -233,4 +233,24 @@ https://codesandbox.io/
 <img src="images/img.png" />
 ```
 
+### HTML Video
+
+https://www.w3schools.com/html/html5_video.asp
+
+- video tag : 저장된 영상 파일을 해당 웹 페이지에 삽입
+
+```
+<video>
+  <source src="영상 경로/이름" type="video/mp4" />
+</video>
+```
+
+- attribute
+  - html5에서 추가된 속성
+  - name = "value" 형식에서 name만 쓰는 형식으로 변경
+  - controls : 동영상 컨트롤 버튼 표시
+  - loop : 반복 재생
+  - autoplay : 자동 재생
+  - muted : 음소거
+
 # CSS
