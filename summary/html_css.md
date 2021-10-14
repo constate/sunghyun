@@ -253,4 +253,22 @@ https://www.w3schools.com/html/html5_video.asp
   - autoplay : 자동 재생
   - muted : 음소거
 
+### HTML Semantic Elements
+
+https://www.w3schools.com/html/html5_semantic_elements.asp
+
+- 영역을 구분하는 태그(요소)를 의미있게 구분하고 영역을 설정하도록 하는 태그
+
+> header : 웹 페이지 상단 영역 - 로고, 로그인, 메뉴 등
+>
+> nav : navigation - 웹 사이트 메뉴
+>
+> section : 콘텐츠를 담는 영역
+>
+> article : 짧은 글 / 한 내용으로 완성되는 글
+>
+> aside : 부수적인 내용, 광고 등
+>
+> footer : 하단 영역 - 서브 로고, 주소, 연락처, 소유권 등
+
 # CSS
