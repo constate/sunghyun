@@ -498,3 +498,94 @@ https://www.w3schools.com/css/css_text.asp
 > text-align
 >
 > - left, center, right, justify(양쪽맞춤)
+
+> text-decoration : 텍스트 line
+>
+> -overline, line-through, underline, none
+
+> text-indent : 들여쓰기
+>
+> letter-spacing : 자간
+>
+> - 양수, 음수값 사용 가능
+
+> line-height : 줄 높이
+>
+> - 텍스트 높이를 포함한 전체 줄 높이
+> - 고정값 : px
+> - 배수값 : 단위없이 숫자, 글꼴 크기에 비례
+
+> white-space : 줄바꿈 설정
+>
+> - wrap(기본), nowrap
+
+### CSS Font
+
+https://www.w3schools.com/css/css_font.asp
+
+> font-family
+>
+> - 글꼴 종류 적용
+> - 글꼴 종류를 여러개 적용
+>   - 순서대로 폰트를 찾아서 적용
+> - 폰트를 사용자 컴퓨터(클라이언트)에서 찾는 것이 기본
+> - 포트 종류를 적용시 마지막에 브라우저 기본 폰트를 적용
+>   - 고딕 : sans-serif
+>   - 명조 : serif
+
+```
+p { font-family: "맑은 고딕", 돋움, sans-serif;}
+=> 맑은 고딕 폰트를 찾고, 있으면 적용 없으면 돋움 폰트 적용, 없으면 sans-serif(브라우저 기본 폰트)
+```
+
+> 폰트 카테고리
+>
+> - 고딕(sans-serif), 명조(serif)
+
+> 웹 폰트
+>
+> - font-family 속성은 브라우저에서 렌더링을 할 때 클라이언트에서 폰트를 찾는 기능
+> - font 파일을 서버에 저장 후 클라이언트 요청에 따라 Resource를 전송할 때 font 파일도 같이 전송해서 font-family 속성이 전송된 폰트를 사용할 수 있도록 하는 폰트 사용 방식
+> - 사용자의 디바이스(client)에 저장된 폰트에 상관없이 서버에 저장된 폰트를 사용하므로 모든 사용자가 동일한 폰트를 사용할 수 있게 해줌
+> - 웹에서 사용할 수 있는 형식의 폰트 파일 : woff, eof
+
+> - 웹 폰트 서비스
+
+    - 개발자가 웹 폰트 파일 변환 작업없이 웹 폰트 사용 가능
+    - 구글 폰트(Google Font) - 영문 https://fonts.google.com/
+    - 눈누 폰트(Noonnu) - 한글 https://noonnu.cc/
+
+> font-size
+>
+> - px로 크기 설정
+
+> font-weight
+>
+> - font 굵기 : normal/bold, 100~900 : 100단위 숫자(항상 모든 굵기가 존재하는 것은 아님)
+
+> font-style
+>
+> - 이탤릭체(기울임꼴)
+
+### CSS links
+
+https://www.w3schools.com/css/css_link.asp
+
+- 4가지 상태 구분을 하여 각각 스타일링 할 수 있음
+
+```
+a:link : 일반 상태
+a:visited : 방문한 상태
+a:hover : 마우스를 갖다 댄 상태
+a:active : 마우스 버튼을 누른 상태
+```
+
+### CSS list
+
+- 목록에 자동으로 생성되는 기호, 숫자 제거
+
+```
+p {
+  list-style-type: none;
+}
+```
