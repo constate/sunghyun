@@ -130,6 +130,7 @@ https://www.w3schools.com/html/html_links.asp
 
 - 다른 페이지로 링크 연결
 - 같은 페이지에서 상하 이동 -> 북마크 기능
+  - href attr에 #만 사용하게 되면 페이지의 처음으로 이동
 
 ### HTML Lists
 
@@ -158,7 +159,7 @@ https://www.tablesgenerator.com/html_tables
 - th tag : table header / 열 제목 셀
 - td tag : table data / 데이터 셀
 
-## HTML MULTIMEDIA Contents
+## HTML MULTIMEDIA Contents(Embed Contents)
 
 ### HTML Images
 
@@ -253,7 +254,7 @@ https://www.w3schools.com/html/html5_video.asp
   - autoplay : 자동 재생
   - muted : 음소거
 
-### HTML Semantic Elements
+## HTML Semantic Elements
 
 https://www.w3schools.com/html/html5_semantic_elements.asp
 
@@ -271,4 +272,132 @@ https://www.w3schools.com/html/html5_semantic_elements.asp
 >
 > footer : 하단 영역 - 서브 로고, 주소, 연락처, 소유권 등
 
+## HTML Block & inline
+
+https://www.w3schools.com/html/html_blocks.asp
+
+- HTML Element는 기본적으로 각각의 영역을 가짐
+
+- HTML Elements의 특성(디자인 개념)
+
+  - Block 요소
+
+    - 항상 새 줄에서 표시됨(줄 바뀌어서 표시)
+    - Block 요소로 만들어지는 영역의 가로길이가 전체 너비에 채워짐
+    - div tag : division - container 요소
+
+  - Inline 요소
+
+    - 한 줄에 나란히 표시됨(줄 바뀌지 않음)
+    - Inline 요소로 만들어지는 영역의 가로길이가 콘텐츠 길이만큼 너비를 차지함
+    - span tag : container 요소
+
+## HTML ID, Class
+
+https://www.w3schools.com/html/html_id.asp
+https://www.w3schools.com/html/html_classes.asp
+
+- HTML Element에 이름을 지정해주는 attribute
+
+> ID
+>
+> - 하나의 HTML 문서내에서 고유해야 함(하나만 존재) - 논리적 특징
+> - 하나의 HTML Element에 여러개 ID 이름을 지정할 수 없음
+> - 일반적으로 데이터를 고유하게 표시할 때 사용
+
+```
+<h1 id="heading">제목</h1>
+<h1 id="heading">제목</h1> (x)
+
+<p id="paragraph">단락</p>
+<p id="sentence chapter">단락</p> (x)
+```
+
+> Class
+>
+> - 하나의 HTML 문서내에서 여러 Element에 사용할 수 있음
+> - 하나의 HTML Element에 여러 Class 이름을 사용할 수 있음
+> - 스타일을 공통 적용하거나 효과를 여러 곳에 동일하게 적용할 때 사용
+
+```
+<h1 class="heading">제목</h1>
+<h1 class="heading">제목</h1> (o)
+
+<p class="paragraph">단락</p>
+<p class="sentence chapter">단락</p> (o)
+```
+
 # CSS
+
+## CSS Introduction
+
+https://www.w3schools.com/css/css_intro.asp
+
+- css : Cascading Style Sheets
+- HTML Element를 스타일링 해주는 언어
+
+> cascading : 연속적인
+>
+> 동일한 HTML Element에 대해서 여러가지 스타일링 적용
+>
+> - 가장 마지막에 적용된 스타일이 HTML Element에 적용되어 화면에 표시
+
+## CSS Syntax(문법, 구문)
+
+https://www.w3schools.com/css/css_syntax.asp
+
+- selector(선택자)
+- declaration(선언)
+
+```
+선택자 {선언 - property(속성) : value(값);}
+```
+
+## CSS Selector(선택자)
+
+https://www.w3schools.com/css/css_selectors.asp
+
+- 스타일링할 대상(HTML Element)을 선택
+
+> Simple Selector - name(tag), id, class 3가지를 사용해서 선택자를 표현
+>
+> Combinator Selector(복합 선택자)
+>
+> Pseudo-class(가상 클래스)
+>
+> Pseudo-element(가상 요소)
+
+### Element(Tag) Selector
+
+- 요소의 이름을 선택자로 사용
+- 해당 요소를 모두 선택해서 스타일링 적용
+
+```
+p {}
+div {}
+```
+
+### ID Selector
+
+```
+#heading {}
+```
+
+### Class Selector
+
+```
+.sentence {}
+```
+
+> 선택자 연결 표현
+>
+> - 여러 요소중 특정 요소를 선택하기 위해 사용
+
+```
+<p id="para" class="sentence">단락</p>
+
+p#para {}
+p.sentence {}
+#para.sentence {}
+
+```
