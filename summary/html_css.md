@@ -401,3 +401,100 @@ p.sentence {}
 #para.sentence {}
 
 ```
+
+## CSS 작성 방식
+
+- External : 외부 파일
+- Internal : html 파일 내부에 작성 - head 부분 style태그 사용
+- Inline : html element에 직접 작성
+
+## Color 이론
+
+> 색 혼합 방식
+>
+> - 가산 혼합 : 빛 혼합
+>
+>   - 혼합하는 색이 많을 수록 밝아짐, 모든 색을 혼합 => 흰색
+>   - 스크린 : 빛의 정보를 이용
+>   - 컬러모드 : RGB (Red, Green, Blue)
+>
+> - 감산 혼합 : 잉크 혼합
+>   - 혼합하는 색이 많을 수록 어두워짐, 모든 색을 혼합 => 검은색
+>   - 프린트 : 잉크 색을 이용
+>   - 컬러모드 : CMYK (Cyan, Magenta, Yellow, blacK(Key))
+
+> RGB 모드
+>
+> 컴퓨터 사용 진법 : 2진법(0,1)
+>
+> 데이터 저장 최소 단위 : bit
+>
+> - 저장 공간 1칸 : 0,1중 하나를 저장
+>
+>   정보 표현 최소 단위 : byte(1byte = 8bit)
+>
+> RGB 컬러모드
+>
+> - Red, Green, Blue 각각 1byte 색 정보 표현
+> - 총 3byte => 24bit 트루 컬러
+>
+> - CSS에서의 색 표현 방식
+>   - 10진수 표시(0~9) : rgb(150, 200, 56) => 10진수 변형 : 0 ~ 255
+>   - 16진수 표시(0~9, A~F) : #1AFFd3 => 16진수 변형 : 2진수 24bit -> 16진수 6자리
+
+> 컴퓨터 용량 단위
+>
+> - 1000byte = 1KB
+> - 1000KB = 1MB
+> - 1000MB = 1GB
+> - 1000GB = 1TB
+
+> 투명모드
+>
+> - transparent, opacity, alpha
+>
+> CSS 표현
+>
+> - opacity : HTML Element 투명도 조절
+> - rgba() : 색의 투명도 조절
+
+## CSS 상속
+
+- 조상 또는 부모요소에 적용된 css style이 자식 또는 자손요소에 상속되어 적용되는 현상
+- 모든 CSS property의 style이 상속되는 것은 아님
+- 모든 HTML Element가 상속되어 적용되는 것은 아님
+
+```
+-html
+<div class="parent">
+  <p class="child">단락</p>
+</div>
+
+-css
+.parent{color:red;}
+
+=> font 색상은 child 요소에도 적용
+```
+
+## CSS Property Category
+
+- HTML Contents Styling
+
+  - Text Contents Styling
+  - Multimedia Contents Styling
+
+- HTML 구조 Styling
+
+## Text Contents Styling
+
+### CSS Text
+
+https://www.w3schools.com/css/css_text.asp
+
+> color
+>
+> - 글꼴 색
+
+> text-align
+>
+> - left, center, right, justify(양쪽맞춤)
