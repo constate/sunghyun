@@ -589,3 +589,8 @@ p {
   list-style-type: none;
 }
 ```
+
+### CSS Table
+
+- Table 테두리 속성은 틈이 벌어져 있는 테두리가 기본
+- border-collapse:collapse 설정 => 테두리 사이 틈 제거
