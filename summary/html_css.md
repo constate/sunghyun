@@ -663,21 +663,70 @@ border-left : 1px solid red;
 - 배경색, 배경이미지
 
 > 배경색 : background-color
+>
+> - 색 코드값
+>   - 색 이름 (red)
+>   - 16진수 : #FFFFFF =>00[R] 00[G] 00[B]
+>   - 10진수 : rgb(200[R], 125[G], 38[B])(0~255)
+>   - 10진수 + 투명 : rgba(200, 125, 38, 0.5[투명도(0~1)]) a=Alpha
 
 > 배경이미지 : background-image
 >
+> - url() : 이미지 파일 경로/이름
+> - 특징 : 이미지를 반복시켜서 영역을 채움
+>
 > - 배경이미지 반복 : background-repeat
+>
+>   - repeat(defalult), no-repeat, repeat-x, repeat-y
+>
 > - 배경이미지 고정 : background-attachment
+>   - fixed : 고정(배경이 고정됨)
 > - 배경이미지 위치 : background-position
+>   - x, y 좌표값 표시 (100px, 200px)
+
+### Box model과 Block/Inline 관계
+
+- Block 요소는 박스 모델이 제대로 적용
+- Inline 요소는 박스 모델이 제대로 적용되지 않음
+  - width/height, martgin이 적용되지 않음
+
+### display 속성
+
+> 한줄에 여러 박스를 표시하면서(inline), 박스모델도 적용(block)
+> inline-block 성질을 사용
+
+- 박스가 화면에 표시될 때 원래의 성질을 변경
+- 값 : block, inline, inline-block
 
 ## Multimedia Contents Styling
 
-> 콘텐츠(이미지, 비디오) 크기, 여백 스타일링
->
-> 콘텐츠(이미지, 비디오) 배치
+> 콘텐츠(이미지, 비디오) 크기, 여백 스타일링 => Box Model
 
 ## Layout Styling
 
-> 구분 영역(박스) 크기, 여백 스타일링
+> 구분 영역(박스) 크기, 여백 스타일링 => Box Model
 >
 > 구분 영역(박스)의 배치
+
+### flex
+
+> display : flex;
+>
+> - flex 배치 적용
+>
+> flex-difrection : 배치 방향
+>
+> - row(default), row-reverse, column, column-reverse
+>
+> flex-wrap : 줄 바꿈
+>
+> - nowrap(default), wrap
+>
+> justify-content : 가로방향 정렬
+>
+> - flex-start, center, flex-end
+> - space-around, space-between
+>
+> align-items : 세로방향 정렬
+>
+> - flex-start, center, flex-end
