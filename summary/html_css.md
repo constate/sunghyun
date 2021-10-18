@@ -594,3 +594,90 @@ p {
 
 - Table 테두리 속성은 틈이 벌어져 있는 테두리가 기본
 - border-collapse:collapse 설정 => 테두리 사이 틈 제거
+
+## Box Styling
+
+- Box : 네모난 형태의 영역, 콘텐츠 => HTML 모든 요소
+
+> Box model(Box 스타일링 속성의 모음)
+>
+> - 크기 : 가로길이(너비(width)), 세로길이(높이(height))
+> - 여백 : 안쪽 여백(padding), 바깥 여백(margin)
+> - 테두리
+> - 배경(추가 속성) : 콘텐츠 영역, padding(안쪽 여백) 영역에 적용
+
+### height / width
+
+> - auto : default - 값을 지정하지 않았을때 적용되는 기본값
+>
+>   - width : 너비가 부모요소를 기준으로 전체에 채워짐(block 요소의 특징)
+>   - height : 높이가 자식요소 기준으로 지정됨
+>
+> - px : px 단위로 고정된 수치값 고정
+>
+> - % : % 단위로 유동적인 수치값 적용
+>   - 부모요소의 크기가 변경되면 맞춰서 같이 변경됨 => 반응형 웹페이지에 사용
+>   - width : 부모 요소를 기준을 일정 비율만큼 적용
+>   - height : 부모 요소를 기준으로 일정 비율만큼 적용, 부모 요소가 auto 일 경우 적용되지 않음
+
+### padding
+
+> 개별 적용
+>
+> - padding-top
+> - padding-right
+> - padding-bottom
+> - padding-left
+
+> 축약표현
+>
+> padding : 값
+>
+> - 값 4개 : top, right, bottom, left
+> - 값 3개 : top, right-left, bottom
+> - 값 2개 : top-bottom, right-left
+> - 값 1개 : 4방향 공통 적용
+
+### border
+
+- 테두리 스타일 : 굵기, 형태, 색상
+- 테두리 방향
+
+```
+border : 굵기 형태 색;
+border : 1px solid red;
+
+border-top : 1px solid red;
+border-right : 1px solid red;
+border-bottom : 1px solid red;
+border-left : 1px solid red;
+```
+
+### margin
+
+- 바깥 여백
+- 사용 방법 : padding과 같음
+
+### background
+
+- 배경색, 배경이미지
+
+> 배경색 : background-color
+
+> 배경이미지 : background-image
+>
+> - 배경이미지 반복 : background-repeat
+> - 배경이미지 고정 : background-attachment
+> - 배경이미지 위치 : background-position
+
+## Multimedia Contents Styling
+
+> 콘텐츠(이미지, 비디오) 크기, 여백 스타일링
+>
+> 콘텐츠(이미지, 비디오) 배치
+
+## Layout Styling
+
+> 구분 영역(박스) 크기, 여백 스타일링
+>
+> 구분 영역(박스)의 배치
