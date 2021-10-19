@@ -606,6 +606,41 @@ p {
 > - 테두리
 > - 배경(추가 속성) : 콘텐츠 영역, padding(안쪽 여백) 영역에 적용
 
+> Box 전체 크기 계산(가로 또는 세로)
+>
+> - 가로 : width + padding + border
+> - 세로 : height + padding + border
+
+```
+Ex)
+
+div {
+  width: 200px;
+  padding: 30px;
+  border: 1px solid red;
+  margin: 20px;
+}
+=> 박스 전체 가로 길이 : 200px + (30px * 2) + (1px *2)
+
+=> 박스 전체 가로 길이 200px : 200px - (30px *2) - (1px *2) = 138px(width)
+```
+
+> box-sizing : border-box;
+>
+> - width 속성 값이 전체 길이가 되도록 특성 변경
+
+```
+div {
+  width: 200px;
+  padding: 30px;
+  border: 1px solid red;
+  margin: 20px;
+  box-sizing: border-box;
+}
+
+=> 박스 전체 가로길이 : 200px
+```
+
 ### height / width
 
 > - auto : default - 값을 지정하지 않았을때 적용되는 기본값
@@ -730,3 +765,65 @@ border-left : 1px solid red;
 > align-items : 세로방향 정렬
 >
 > - flex-start, center, flex-end
+
+## 반응형 웹 디자인(RWD: Responsive Web Design)
+
+https://www.w3schools.com/css/css_rwd_intro.asp
+
+- PC모니터, 태블릿, 스마트폰 등 여러 디바이스 화면에 콘텐츠를 잘 전달할 수 있도록 레이아웃이 적절하게 변경되도록 하는 웹 디자인 방식
+
+> 디바이스별 해상도 구분
+>
+> - 반응형 웹 : 대부분 가로길이 해상도로 구분
+> - 중단점(breakpoint) : 범위 설정
+>   - 디바이스별 구분 : PC, Tablet, Smart phone
+>   - 중단점은 단일한 한 지점을 설정하는것이 아니라 범위로 설정해야 함
+>   - PC : 1920px ~ 1024px
+>   - tablet : 1024px ~ 768px
+>   - smart phone : 640px ~ 320px
+>
+> HTML, CSS 사용하는 기술
+>
+> - viewport
+>
+>   - https://www.w3schools.com/css/css_rwd_viewport.asp
+>   - 여러 디바이스 화면에 최적화되게 보일 수 있도록 HTML 페이지에 설정하는 구문
+>
+> - media query
+>
+>   - 해상도를 구분해서 필요한 CSS를 적용할 수 있게 하는 키워드
+>   - 해상도 범위를 열린 범위로 구현하면 넓은 범위에서 적용한 css를 cascading을 통해 작은 범위에서 공통으로 사용할 수 있음
+
+```
+@media screen and (가로길이 해상도 범위){
+  적용하고자 하는 css 코드
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+** max-width : 최대 가로길이 => **픽셀 이하 범위
+```
+
+```
+/* pc styling */
+body{
+  background : red;
+}
+/* tablet styling */
+@media screen and (max-width: 1024px){
+  body {
+    background : blue;
+  }
+}
+
+/* smart phone styling */
+@media screen and (max-width: 769px){
+  body {
+    background : green;
+  }
+}
+```
