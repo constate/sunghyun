@@ -766,6 +766,19 @@ border-left : 1px solid red;
 >
 > - flex-start, center, flex-end
 
+### CSS position
+
+> position : box를 독립적으로 좌표를 사용하여 위치를 지정
+>
+> - value : static, relative, absolute, fixed
+
+> position 속성을 사용하면 위치를 정해주는 좌표설정 property
+> top, right, bottom, left
+
+> position 속성값 중 absolute, fixed 적용하면 width 특성이 변경
+>
+> - width 부모요소를 기준으로 채워지는 성질 => 자식요소에 맞춰지는 성질
+
 ## 반응형 웹 디자인(RWD: Responsive Web Design)
 
 https://www.w3schools.com/css/css_rwd_intro.asp
